@@ -1,0 +1,36 @@
+require('dotenv').config()
+const { Telegraf } = require('telegraf')
+const axios = require('axios')
+
+const bot = new Telegraf(process.env.BOT_TOKEN);
+
+bot.command('hola', (ctx) => {
+    ctx.reply('Hola soy un Bot creado para lograr conseguir el producto que necesite!');
+})
+
+bot.launch();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Use this token to access the HTTP API:
+5301328954:AAG7C1UUmTJbJEN0d53C_LWabtlObXv3euM
+Keep your token secure and store it safely, it can be used by anyone to control your bot.
